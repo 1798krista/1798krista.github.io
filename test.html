@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body style="text-align: center;">
+	<h1>蝦皮全站499-50</h1> <!--这里面是要填写的标题-->
+	<button id="copyButton"><a href="https://s.shopee.tw/g6qhSCDra">點擊複製優惠碼</a></button><!--这里是按钮的提示内容-->
+	<p id="textToCopy" style="display: none;">8R9FYZ6QK</p><!--这是要复制内容-->
+	<script>
+		document.getElementById("copyButton").addEventListener("click", function() {
+   		 var text = document.getElementById("textToCopy").textContent;
+    navigator.clipboard.writeText(text).then(function() {
+        console.log("文本已复制到剪贴板。");
+    }, function(err) {
+        console.error("无法复制文本: ", err);
+    });
+});
+	</script>
+</body>
+</html>
